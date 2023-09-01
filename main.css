@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* fonte padrão da página*/
+}
+
+body {
+    background-color: #E7E7E7; /*cor de fundo da página */
+    padding-top: 100px; /* margem superior da página para o cabeçalho */
+}
+
+header {
+    display: flex; /* para que os elementos do cabeçalho fiquem um ao lado do outro */
+    align-items: center; /* para que os elementos fiquem centralizados */
+    margin-bottom: 40px; /* para separar o cabeçalho do formulário */
+}
+
+header img {
+    height: 36px; /* tamanho do logo do cabeçalho */
+    margin-right: 16px;
+}
+
+header h1 {
+    font-size: 40px; /* tamanho da fonta do cabeçalho */
+    font-weight: bold;
+}
+
+.container { /* dentro desse container criado no html estão inclusos: cabeçalhos, tabela e formulários */
+    max-width: 960px; /* resolução da tela suportada da página */
+    width: 100%; /*porcentagem de ocupação do conteúdo dá pagina */
+    margin: 0 auto; /* para centralizar o conteúdo na horizontal */
+}
+
+form {
+    display: flex; /* uniformizando o alinhamento dos itens do formulário */
+    max-width: 640px; /* área de tela utilizada pelo form */
+    width: 100%; /* proporção de utilização da área mencioanada acima */
+    justify-content: space-between; /*distribuir o espaçamento entre os itens */
+    margin-bottom: 56px; /* margem do form para a tabela */
+}
+form input { /*estilizando os campos dos formulários */
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px; /*espaçamento entre os campos do formulário */
+}
+form button { /*estilizando o botão ADICIONAR + */
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px; /*espaçamento do botão para os campos do formulário */
+}
+
+table {
+    width: 100%; /*ocupação de espaço da tabela dentro da área da página */
+}
+
+table th { /*estilizando a tabela */
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0; /* espaçamento da linha para o cabeçalho da tabela */
+    text-align: center; /* centralizando os itens da tabela no meio da coluna */
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /*colocando uma linha separando as informações da tabela, utilizando a colocaração RGBA */
+}
+
+table td img { /* estilizando e arrumando a imagem dentro da tabela */
+    height: 30px;
+}
+
+.resultado { /*estilizando a parte de APROVADO OU REPROVADO da tabela */
+    padding: 8px;
+    font-weight: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px; /*borda arredondada */
+}
+
+.aprovado { /*classe para estilizar em caso de aprovado ou reprovado */
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
