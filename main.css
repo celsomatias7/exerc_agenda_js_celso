@@ -17,8 +17,8 @@ header {
 }
 
 header img {
-    height: 36px; /* tamanho do logo do cabeçalho */
-    margin-right: 16px;
+    height: 80px; /* tamanho do logo do cabeçalho */
+    margin-right: 2px;
 }
 
 header h1 {
@@ -78,18 +78,3 @@ table td img { /* estilizando e arrumando a imagem dentro da tabela */
     height: 30px;
 }
 
-.resultado { /*estilizando a parte de APROVADO OU REPROVADO da tabela */
-    padding: 8px;
-    font-weight: 24px;
-    color: #fff;
-    background-color: #000;
-    border-radius: 3px; /*borda arredondada */
-}
-
-.aprovado { /*classe para estilizar em caso de aprovado ou reprovado */
-    background-color: #009432;
-}
-
-.reprovado {
-    background-color: red;
-}
